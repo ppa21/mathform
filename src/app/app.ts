@@ -1,9 +1,10 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { ReactiveFormsModule } from '@angular/forms';
+import { Equation } from "./equation/equation";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [ReactiveFormsModule, Equation],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
